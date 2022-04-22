@@ -13,6 +13,32 @@
 <body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy">
 	<div class="container-fluid">
 		<div class="row">
+			<div class="d-sm-block d-md-none d-lg-none">
+				<button class="sp-menu btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+					<i class="bi bi-list"></i>
+				</button>
+				<div class="sp-menu-content offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+					<div class="offcanvas-header">
+						<h5 id="offcanvasRightLabel"></h5>
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<a href="#" class="d-block text-center mb-5"><img src="img/logo.png" alt="" width="110"></a>
+						<a class="list-group-item list-group-item-action" href="#home">Home</a>
+						<a class="list-group-item list-group-item-action" href="#about">About</a>
+						<a class="list-group-item list-group-item-action" href="#skills">Skills & Languages</a>
+						<a class="list-group-item list-group-item-action" href="#experience">Experience</a>
+						<a class="list-group-item list-group-item-action" href="#works">Works</a>
+						<a class="list-group-item list-group-item-action" href="#contact">Contact</a>
+						<div class="contact-sns">
+							<a href="https://www.linkedin.com/in/mya-thet-chel-039b68234/" target="_blank"><i class="bi bi-linkedin"></i></a>
+							<a href="mailto:myathetchel00@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+							<a href="https://www.instagram.com/ai__rott/" target="_blank"><i class="bi bi-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="col-md-2 side-nav d-sm-none d-none d-md-block d-lg-block" id="myScrollspy">
 				<div class="list-group">
 					<a href="#" class="d-block text-center mb-5"><img src="img/logo.png" alt="" width="110"></a>
@@ -46,7 +72,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div><!--home-->
 
 				<div id="about" class="section py-5">
 					<div class="container">
@@ -70,23 +96,45 @@
 						</div>
 					</div><!--container-->
 				</div><!--#about-->
+
+				<div id="skills" class="section py-5">
+					<div class="container">
+						<h2 class="">Skills & Languages</h2>
+						<div class="skill-bar">
+							<p>HTML/CSS</p>
+							<div class="progress mb-3" style="height: 12px;">
+								<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<p>HTML/CSS</p>
+							<div class="progress mb-3" style="height: 12px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<p>HTML/CSS</p>
+							<div class="progress mb-3" style="height: 12px;">
+								<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<p>HTML/CSS</p>
+							<div class="progress mb-3" style="height: 12px;">
+								<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<p>HTML/CSS</p>
+							<div class="progress mb-3" style="height: 12px;">
+								<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+							</div>
+						</div>
+
+					</div><!--container-->
+				</div><!--#skills-->
 			</div>
-			<!-- <div class="col-md-10 offset-md-2">
-				<div class="area" >
-					<ul class="circles">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-					</ul>
-				</div>
-			</div> -->
+			
 
 		</div><!--row-->
 
@@ -102,7 +150,11 @@
 
 
 
-
+	<script>
+		$(".sp-menu").click(function(e){
+			$('#offcanvasRight').offcanvas('hide');
+			})
+	</script>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
