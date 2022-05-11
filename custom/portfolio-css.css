@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    font-size: 18px;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+#hero {
+  padding: 1rem;
+  max-height: fit-content;
+  height: 100vh;
+  background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+
+}
+.hero-wrapper {
+    display: block;
+    margin: 25% 30%;
+}
+.hero-wrapper h1 {
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    color: #000;
+}
+
+#navbar {
+  display: block;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+nav li a {
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    color: #000;
+    display: inline-block;
+    font-weight: 400;
+    transition: all ease-out 250ms;
+    padding: 18px 40px;
+}
+nav li a:hover {
+  color: #000;
+  text-decoration: line-through;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+.sticky {
+  position: fixed;
+  background-color: #fff;
+}
+.sticky + .content {
+    padding-top: 100px;
+}
+.active {
+  color: #000;
+  text-decoration: line-through;
+}
+li.nav-logo-wrap a:hover {
+  background-color: transparent;
+}
+.nav-logo {
+  width: 140px;
+  vertical-align: middle;
+}
+.add-shadow {
+  box-shadow: rgb(113 135 164 / 12%) 0px 0px 5px 2px;
+  background-color: #fff;
+  transition: 1s;
+}
+/*--nav--*/
+
+section {
+  background-color: #f2f2f2;
+  height: 90vh;
+  margin:0;
+  padding:4.5rem 4rem;
+}
+
+section:nth-of-type(2n) {
+  background-color: #ccc;
+}
+
+section:last-of-type {
+  height: 100vh;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #000;
+}
+
+a.btn-border:hover {
+  -webkit-box-shadow: -4px -4px 0 #000;
+  box-shadow: -4px -4px 0 #000;
+}

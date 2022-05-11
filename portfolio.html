@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Mya Thet Chel</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="custom/portfolio-css.css">
+	<link rel="stylesheet" href="custom/portfolio-scss.scss">
+</head>
+<body>
+    <div id="hero" class="header">
+		<div class="hero-wrapper">
+			<h1>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h1>
+			<script src="https://unpkg.com/ityped@0.0.10"></script>
+				<script>
+				window.ityped.init(document.querySelector('.ityped'),{
+					strings: ['I am Web Designer', 'and Markup Engineer.', 'This is my porfolio site.','Scroll down to explore more!'],
+					loop: true
+				})
+			</script>
+		</div>
+	</div>
+    <div id="navbar">
+        <nav class="navigation">
+          <ul>
+			<li class="nav-logo-wrap">
+				<a href="#"><img src="img/logo-black.png" alt="" class="nav-logo"></a>
+			</li>
+            <li>
+              <a href="#about">About</a>
+              <a href="#products">Products</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
+              <a href="#gallery">Gallery</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+			<section id="about">
+				<h1>About</h1>
+				<a href="" class="btn btn-border">PUSH！</a>
+			</section>
+			<section id="products">
+				<h1>Products</h1>
+			</section>
+			<section id="services">
+				<h1>Services</h1>
+			</section>
+			<section id="contact">
+				<h1>Contact</h1>
+			</section>
+			<section id="gallery">
+				<h1>Gallery</h1>
+			</section>
+      </div>
+
+      <script>
+        const sections = document.querySelectorAll("section[id]");
+        window.addEventListener("scroll", navHighlighter);
+        function navHighlighter() {           
+            let scrollY = window.pageYOffset;
+            sections.forEach(current => {
+            const sectionHeight = current.offsetHeight;
+            const sectionTop = current.offsetTop - 80;
+            sectionId = current.getAttribute("id");
+            
+            if (
+                scrollY > sectionTop &&
+                scrollY <= sectionTop + sectionHeight
+            ){
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+            } else {
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+            }
+            });
+        }
+		// sticky nav
+		// window.onscroll = function() {myFunction()};
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
+        
+        // function myFunction() {
+        //     if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //     } else {
+        //     navbar.classList.remove("sticky");
+        //     }
+        // }
+		window.addEventListener('scroll',(e)=>{
+			const navbar = document.getElementById("navbar");
+			if(window.pageYOffset>0){
+			navbar.classList.add("add-shadow");
+			}else{
+			navbar.classList.remove("add-shadow");
+			}
+		});
+      </script>
+
+</body>
+</html>
