@@ -8,20 +8,31 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="custom/portfolio-css.css">
 	<link rel="stylesheet" href="custom/portfolio-scss.scss">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="hero" class="header">
 		<div class="hero-wrapper">
-			<h1>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h1>
-			<script src="https://unpkg.com/ityped@0.0.10"></script>
-				<script>
-				window.ityped.init(document.querySelector('.ityped'),{
-					strings: ['I am Web Designer', 'and Markup Engineer.', 'This is my porfolio site.','Scroll down to explore more!'],
-					loop: true
-				})
-			</script>
+			<div class="hero-row">
+				<div class="hero-col-left">
+					<h1>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h1>
+					<script src="https://unpkg.com/ityped@0.0.10"></script>
+						<script>
+						window.ityped.init(document.querySelector('.ityped'),{
+							strings: ['I am Web Designer', 'and Markup Engineer.', 'This is my porfolio site.','Scroll down to explore more!'],
+							loop: true
+						})
+					</script>
+				</div>
+				<div class="hero-col-right">
+					<!-- <img src="img/logo-black.png" alt=""> -->
+				</div>
+			</div>
+			
 		</div>
 	</div>
+	<!--Navigation start-->
+	<!--pc nav-->
     <div id="navbar">
         <nav class="navigation">
           <ul>
@@ -30,19 +41,34 @@
 			</li>
             <li>
               <a href="#about">About</a>
-              <a href="#products">Products</a>
-              <a href="#services">Services</a>
-              <a href="#contact">Contact</a>
-              <a href="#gallery">Gallery</a>
+              <a href="#products">Skills & Languages</a>
+              <a href="#services">Experience</a>
+              <a href="#contact">Works</a>
             </li>
 
           </ul>
         </nav>
-      </div>
+	</div>
+	 <!--sp nav-->
+		<input type="checkbox" id="active">
+		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+		<div class="wrapper">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</div>
+	<!--Navigation end-->
+
+
+	 
       <div class="main-content">
 			<section id="about">
 				<h1>About</h1>
-				<a href="" class="btn btn-border">PUSH！</a>
+				<a href="" class="btn btn-border">Download CV</a>
 			</section>
 			<section id="products">
 				<h1>Products</h1>
@@ -53,9 +79,6 @@
 			<section id="contact">
 				<h1>Contact</h1>
 			</section>
-			<section id="gallery">
-				<h1>Gallery</h1>
-			</section>
       </div>
 
       <script>
@@ -65,16 +88,16 @@
             let scrollY = window.pageYOffset;
             sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 80;
+            const sectionTop = current.offsetTop - 160;
             sectionId = current.getAttribute("id");
             
             if (
                 scrollY > sectionTop &&
                 scrollY <= sectionTop + sectionHeight
             ){
-                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("nav-active");
             } else {
-                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+                document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("nav-active");
             }
             });
         }
@@ -98,6 +121,7 @@
 			navbar.classList.remove("add-shadow");
 			}
 		});
+
       </script>
 
 </body>
