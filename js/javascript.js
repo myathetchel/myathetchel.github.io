@@ -30,14 +30,14 @@ function navHighlighter() {
     });
 }
 
-window.addEventListener('scroll',(e)=>{
-    const navbar = document.getElementById("navbar");
-    if(window.pageYOffset>750){
-    navbar.classList.add("add-shadow");
-    }else{
-    navbar.classList.remove("add-shadow");
-    }
-});
+// window.addEventListener('scroll',(e)=>{
+//     const navbar = document.getElementById("navbar");
+//     if(window.pageYOffset>750){
+//     navbar.classList.add("add-shadow");
+//     }else{
+//     navbar.classList.remove("add-shadow");
+//     }
+// });
 
 function reveal() {
 var reveals = document.querySelectorAll(".reveal");
@@ -56,3 +56,4 @@ for (var i = 0; i < reveals.length; i++) {
 
 }
 window.addEventListener("scroll", reveal);
+
