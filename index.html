@@ -14,23 +14,15 @@
 </head>
 <body>
     <div id="hero" class="header">
-		<div class="hero-wrapper">
-			<div class="hero-row">
-				<div class="hero-col-left">
-					<h1>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h1>
-					<script src="https://unpkg.com/ityped@0.0.10"></script>
-						<script>
-						window.ityped.init(document.querySelector('.ityped'),{
-							strings: ['I am Web Designer', 'and Markup Engineer.', 'This is my porfolio site.','Scroll down to explore more!'],
-							loop: true
-						})
-					</script>
-				</div>
-				<div class="hero-col-right">
-					<!-- <img src="img/logo-black.png" alt=""> -->
+		<div class="hero-row">
+			<div class="hero-col-left">
+				<div class="hero-title">
+					Portfolio
 				</div>
 			</div>
-			
+			<div class="hero-col-right">
+				<!-- <img src="img/about.png" alt="" width="100%"> -->
+			</div>
 		</div>
 	</div>
 	<!--Navigation start-->
@@ -72,25 +64,69 @@
 
 	<!--main content start here-->
 	<div class="main-content">
-		<section id="about">
-			<div class="wrapper reveal">
-				<h1>About</h1>
-				<h3>Over 6 years of experience as a social worker.<br>
-					Do coding as an art more than a tool.
-				</h3>
-				<p>Over 6 years of experience as a social worker.<br>
+		<section id="about" class="reveal">
+			<div class="wrapper">
+				<h1><span>About</span></h1>
+				<script src="https://unpkg.com/ityped@0.0.10"></script>
+				<h3>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h3>
+				<script>
+					window.ityped.init(document.querySelector('.ityped'),{
+						strings: ['I am Web Designer', 'and Markup Engineer.', 'Take a look my porfolio website!'],
+						loop: true
+					})
+				</script>
+				<p>
 					Enjoy solving problems most efficiently while working in multicultural environments.<br>
+					Over 6 years of experience as a social worker.<br>
 					Do coding as an art more than a tool.<br>
-					Working in Japan since 2019. Have 1 and a half years of experience in web design and 5 years of experience creating websites.<br>
+					Working in Japan since 2019. 
 					Proficient understanding of web markup, including HTML and CSS coding, WordPress, and design tools (Illustrator, Photoshop).<br>
 					Experience creating wire design with Adobe XD and Figma.
 				</p>
+				<div class="row">
+					<div class="col-left">
+						<p>Date of Birth: 12 May 1996</p>
+						<p>Age: 26 years old</p>
+						<p>Nationality: Myanmar</p>
+					</div>
+					<div class="col-right">
+						<p>Email: <a href="mailto:myathetchel00@gmail.com">myathetchel00@gmail.com</a></p>
+						<p>Address: Koto-ku, Tokyo, Japan</p>
+						<p>Nationality: Myanmar</p>
+					</div>
+				</div>
 				<a href="" class="btn btn-border">Download CV</a>
+				<!-- <div class="row">
+					<div class="col-left">
+						<h1>About</h1>
+					</div>
+					<div class="col-right">
+						<div class="greeting">
+							<h1>Hello!<br>I am Mya Thet Chel<br><span class="ityped"></span></h1>
+							<script src="https://unpkg.com/ityped@0.0.10"></script>
+								<script>
+								window.ityped.init(document.querySelector('.ityped'),{
+									strings: ['I am Web Designer', 'and Markup Engineer.', 'This is my porfolio site.'],
+									loop: true
+								})
+							</script>
+						</div>
+						<p>Over 6 years of experience as a social worker.<br>
+							Enjoy solving problems most efficiently while working in multicultural environments.<br>
+							Do coding as an art more than a tool.<br>
+							Working in Japan since 2019. Have 1 and a half years of experience in web design and 5 years of experience creating websites.<br>
+							Proficient understanding of web markup, including HTML and CSS coding, WordPress, and design tools (Illustrator, Photoshop).<br>
+							Experience creating wire design with Adobe XD and Figma.
+						</p>
+						<a href="" class="btn btn-border">Download CV</a>
+					</div>
+				</div> -->
+				
 			</div>
 		</section>
 		<section id="skills">
 			<div class="wrapper reveal">
-				<h1>SKills & Languages</h1>
+				<h1>Skills & Languages</h1>
 				<div class="wrapper">
 					<div class="skill-bar front expert" data-skill="HTML/ CSS"></div>
 					<div class="skill-bar front advanced" data-skill="Materialize CSS"></div>
