@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 * {
   box-sizing: border-box
 }
@@ -14,13 +15,16 @@ p {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.5;
 }
+img {
+  max-width: 100%;
+}
 a {
-  color: #439b25;
+  color: #4ca1b7;
   text-decoration: none;
   transition: 2s;
 }
 a:hover {
-  background: linear-gradient(transparent 60%, #ededed 60%);
+  text-decoration: line-through;
 }
 
 html {
@@ -31,7 +35,7 @@ html {
   padding: 1rem;
   max-height: fit-content;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #99c7d329;
   /* background-color: #989795; */
   /* background: linear-gradient(90deg, #FFC0CB 50%, #94f3f3 50%); */
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
@@ -59,15 +63,18 @@ top: 36%;
   /* background-color: #c8e2bf; */
   width: 26vw;
   height: 80vh;
-  background-position: 28% 25%;
-  background-image: linear-gradient(to bottom, rgb(255 255 255 / 34%), rgb(221 197 189 / 0%)), url(../img/about.png);
+  background-position: 60% 24%;
+  background-image: linear-gradient(to bottom, rgb(255 255 255 / 34%), rgb(221 197 189 / 0%)), url(../img/my-profile.png);
   background-size: cover;
-  border: 15px solid rgba(255,255,255,.7);
+  /* border: 15px solid rgba(255,255,255,.7); */
+  border: 15px solid rgb(153 199 211 / 39%);
+  
 }
 .hero-col-right:after {
   content: "";
   position: absolute;
-  background-color: #c8c5c5;
+  /* background-color: #c8c5c5; */
+  background-color: #99c7d3;
   left: 50%;
   top: -8%;
   width: 32vw;
@@ -75,14 +82,15 @@ top: 36%;
   z-index: -20;
 }
 .hero-title {
-  font-family: 'Rock Salt', cursive;
-  font-size: 6.5vw;
+  /* font-family: 'Rock Salt', cursive;  */
+  font-family: 'Satisfy', cursive;
+  font-size: 10.5vw;
   position: absolute;
   top: 40%;
-  line-height: 2;
-  color: #c8c5c5;
+  /* line-height: 2; */
+  color: #99c7d361;
   z-index: 10;
-  /* opacity: 0.6; */
+  /* opacity: 0.6;*/
 }
 .hero-title::before {
   content: "Mya Thet Chel";
@@ -102,32 +110,34 @@ top: 36%;
 		background-position: 0% 50%;
 	}
 }
+
 .main-content h1 {
   font-size: 2rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Satisfy', cursive;
   text-align: center;
 }
 section {
- /* background-color: #c8e2bf; */
- height: 100vh;
+ background-color: #fff;
+ /* height: 100vh; */
  margin:0;
  padding:4rem;
  position: relative;
  /* scroll-margin-top: 100px; */
 }
 section:nth-of-type(2n) {
-  background-color: #ededed;
+  /* background-color: #fff; */
+  background-color: #99c7d329;
 }
-section:before {
+/* section:before {
   position: absolute;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Satisfy', cursive;
   font-size: 6rem;
   color: #ededed;
   z-index: -1;
 }
 section#about:before {
-  content: "Aboutr";
-}
+  content: "About";
+} */
 .wrapper {
  width: 80%;
  margin: 0 auto;
@@ -140,7 +150,7 @@ section#about:before {
    width: 100%;
  }
  section {
-   padding:1rem;
+   padding:1rem 1rem 4rem;
    scroll-margin-top: 0;
  }
 }
@@ -155,7 +165,7 @@ section#about:before {
   align-items: center;
   text-align: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 1;
 }
 nav ul {
     padding: 0;
@@ -211,7 +221,8 @@ width:100%;
   height: 100px;
   border-radius: 50%;
   transform: scale(0);
-  background: radial-gradient(cyan 0%, pink 20%);
+  background: radial-gradient(#fff 14%, #a6cfe3 50%);
+  /* background: linear-gradient(90deg, #FFC0CB 50%, #94f3f3 50%); */
   right: -50px;
   top: -50px;
   transition: all .6s;
@@ -298,7 +309,7 @@ z-index: 9999;/*ボタンを最前面に*/
 cursor: pointer;
   width: 50px;
   height:50px;
-  background-color: #000;
+  background-color: #99c7d3;
   border-radius: 100%;
   /* display: none; */
 }
@@ -403,7 +414,7 @@ a.btn-border {
   border: 2px solid #000;
   border-radius: 0;
   background: #fff;
-  box-shadow: 4px 4px 0 #94f3f3;
+  box-shadow: 4px 4px 0 #99c7d3;
 }
 
 a.btn-border:hover {
@@ -411,71 +422,34 @@ a.btn-border:hover {
 }
 
 /*--skill--*/
-.skill-bar {
-  /* background-color: #EEE; */
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 18px;
-  font-size: 14px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
-}
-.skill-bar::before{
-  content:  attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 0 5px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+/* .skill-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+.skill-wrap div {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 17px 2px rgb(214 230 235);
+  border-radius: 10px;
+  margin: 7px;
+  width: auto;
 }
 
-.skill-bar.front::before{
-  background-color: #ffc0cb;
+@media screen and (max-width: 786px) {
+  .skill-wrap div {
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 17px;
 }
-.skill-bar.back::before{
-  background-color: #a6cfe3;
 }
-
-.skill-bar.learning::before{
-  width: calc(20% - 10px);
+img.vector-icon {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
-.skill-bar.basic::before{
-  width: calc(40% - 10px);
-}
-.skill-bar.intermediate::before{
-  width: calc(60% - 10px);
-}
-.skill-bar.advanced::before{
-  width: calc(80% - 10px);
-}
-.skill-bar.expert::before{
-  width: calc(100% - 10px);
-}
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
-
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -490,14 +464,12 @@ a.btn-border:hover {
 
 /*--about--*/
 .row {
-  display: inline-block;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.col-left {
-  float: left;
-  width: 46%;
-}
-.col-right {
-  float: right;
-  width: 46%;
+
+@media screen and (max-width: 786px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
 }
