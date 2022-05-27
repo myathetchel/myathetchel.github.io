@@ -6,6 +6,7 @@
 * {
   box-sizing: border-box
 }
+
 body {
     font-family: 'Source Code Pro', monospace;
     font-size: 18px;
@@ -49,6 +50,7 @@ li {
   padding: 1rem;
   max-height: fit-content;
   height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(90deg, #FFC0CB 50%, #94f3f3 50%);
 }
 .hero-row {
@@ -105,8 +107,9 @@ top: 36%;
   margin: 0;
 }
 section {
- background-color: #fff;
+ background-color: #fff1f3;
  /* height: 100vh; */
+
  margin:0;
  padding:4rem;
  position: relative;
@@ -169,6 +172,7 @@ section:nth-of-type(2n) {
  }
 }
 @media screen and (max-width: 600px) {
+
   .hero-col-right {
     width: 80vw;
   }
