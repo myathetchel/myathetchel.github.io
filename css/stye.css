@@ -574,10 +574,10 @@ img.vector-icon {
 }
 
 .works-items {
-  margin-top: 3rem;
+  margin: 4rem 0;
 }
 .works-items .row {
-  gap: 2rem;
+  gap: 4rem;
 }
 .works-items .col-left {
   background-color: #ffc0c7;
@@ -590,4 +590,5 @@ img.vector-icon {
   padding: 1.5rem;
   border: 2px solid;
   border-radius: 10px;
+  color: #fff;
 }
