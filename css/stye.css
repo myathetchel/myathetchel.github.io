@@ -42,6 +42,7 @@ html {
 .mt-3 {
   margin-top: 3rem;
 }
+
 li {
   margin-bottom: 10px;
 }
@@ -56,25 +57,28 @@ li {
 .hero-row {
  display: inline-block;
 }
-.hero-col-left {
-position: absolute;
-left: 10%;
-top: 36%;
-}
-.hero-col-right {
+.hero-col-text {
   position: absolute;
-  right: 8%;
-  bottom: 0;
-  width: 31vw;
+  right: 40%;
+  top: 36%;
+}
+.hero-col-img {
+  position: absolute;
+  left: 35%;
+  bottom: 6%;
+  width: 23vw;
   max-width: 100%;
   display: block;
 }
-
+.hero-col-img img {
+  background-color: #94f3f3;
+  border-radius: 100%;
+}
 .hero-title {
   font-family: 'Satisfy', cursive;
-  font-size: 10.5vw;
+  font-size: 9vw;
   position: absolute;
-  color: #94f3f3;
+  color: #ffc0cb;
   text-shadow: 5px 5px #558abb;
   z-index: 1;
 }
@@ -107,16 +111,13 @@ top: 36%;
   margin: 0;
 }
 section {
- background-color: #fff1f3;
- /* height: 100vh; */
-
+ background-color: #99c7d329;
  margin:0;
  padding:4rem;
  position: relative;
- /* scroll-margin-top: 100px; */
 }
 section:nth-of-type(2n) {
-  background-color: #99c7d329;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -146,7 +147,7 @@ section:nth-of-type(2n) {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-  .hero-col-left {
+  .hero-col-text {
     left: 10%;
     top: 30%;
   }
@@ -172,10 +173,11 @@ section:nth-of-type(2n) {
  }
 }
 @media screen and (max-width: 600px) {
-
-  .hero-col-right {
-    width: 80vw;
-  }
+  .hero-col-img {
+    width: 58vw;
+    bottom: 0;
+    left: 37%;
+}
 }
 
 /*--navigation css--*/
@@ -240,8 +242,7 @@ width:100%;
   height: 100px;
   border-radius: 50%;
   transform: scale(0);
-  background: radial-gradient(#fff 14%, #a6cfe3 50%);
-  /* background: linear-gradient(90deg, #FFC0CB 50%, #94f3f3 50%); */
+  background: linear-gradient(141deg, #FFC0CB 50%, #94f3f3 50%);
   right: -50px;
   top: -50px;
   transition: all .6s;
@@ -328,9 +329,8 @@ z-index: 9999;/*ボタンを最前面に*/
 cursor: pointer;
   width: 50px;
   height:50px;
-  background-color: #99c7d3;
+  background-color: #212529;
   border-radius: 100%;
-  /* display: none; */
 }
 
 /*×に変化*/	
@@ -441,17 +441,13 @@ a.btn-border:hover {
 }
 
 /*--skill--*/
-/* .skill-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
 .skill-wrap div {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
   background: #ffffff;
-  box-shadow: 0 8px 17px 2px rgb(214 230 235);
+  box-shadow: 0 6px 4px rgb(231 231 231);
   border-radius: 10px;
   margin: 7px;
   width: auto;
@@ -499,4 +495,99 @@ img.vector-icon {
   .row {
     grid-template-columns: 1fr;
   }
+}
+
+/*--experience--*/
+.experience-wrap {
+  margin-top: 3rem;
+}
+.experience-balloon, .experience-balloon-last {
+  position: relative;
+  padding: 20px;
+  background-color: #ffeef1;
+  border: 2px solid #212529;
+  margin-bottom: 4rem;
+}
+.experience-balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 45%;
+  bottom: -15px;
+  border-top: 15px solid #212529;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+.experience-balloon::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 45%;
+  bottom: -12px;
+  border-top: 15px solid #ffeef1;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+.deco-spot {
+  margin-bottom: 10px;
+}
+.deco-spot span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  color: azure;
+  border-radius: 100px;
+  border: 2px solid #720013;
+}
+.deco-spot span.red {
+  background-color: #ff0000;
+}
+.deco-spot span.yellow {
+  background-color: #ffcf00;
+}
+.deco-spot span.green {
+  background-color: #bcff09;
+}
+.experience-header {
+  border: 2px solid;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.company-name {
+  font-size: 17px;
+  color: #eb8193;
+}
+.los {
+  font-style: italic;
+  font-size: 16px;
+  color: #175d8b;
+  font-weight: bold;
+}
+
+.works-items {
+  margin-top: 3rem;
+}
+.works-items .row {
+  gap: 2rem;
+}
+.works-items .col-left {
+  background-color: #ffc0c7;
+    padding: 1.5rem;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.works-items .col-right {
+  background-color: #175d8b;
+  padding: 1.5rem;
+  border: 2px solid;
+  border-radius: 10px;
 }
