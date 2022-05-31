@@ -360,6 +360,7 @@ text-transform: uppercase;
 letter-spacing: 0.1em;
 font-weight: bold;
 writing-mode: horizontal-tb;
+display: inline-block;
 }
 
 
@@ -445,10 +446,22 @@ opacity: 0;
     display: inherit;
   }
 }
-
-
 .nav-logo-wrap a {
   padding: 18px;
+}
+a.lang {
+  writing-mode: horizontal-tb;
+  position: relative;
+}
+a.lang span {
+  display: none;
+  position: absolute;
+  left: 67%;
+  top: 30%;
+}
+a.lang:hover .lang-change {
+  display: block;
+  width: 100%;
 }
 /*--navigation end--*/
 
