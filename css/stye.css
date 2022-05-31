@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 * {
   box-sizing: border-box
@@ -22,11 +20,9 @@ img {
 a {
   color: #4ca1b7;
   text-decoration: none;
-  transition: 2s;
 }
 a:hover {
   text-decoration: line-through;
-  transform: translate(0px, -4px);
 }
 html {
   scroll-behavior: smooth;
@@ -39,6 +35,12 @@ html {
   font-weight: 300;
   color: #000;
 }
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
 .mt-3 {
   margin-top: 3rem;
 }
@@ -46,7 +48,30 @@ html {
 li {
   margin-bottom: 10px;
 }
-
+@media screen and (max-width:600px) {
+  p, li  {
+    font-size: 16px;
+  }
+  .main-content h1 {
+    font-size: 2.2rem!important;
+  }
+  .btn, a.btn, button.btn {
+    font-size: 17px!important;
+  }
+  .about-row {
+    grid-row-gap: 0;
+    margin-top: 3rem;
+  }
+  .job-title {
+    font-size: 18px!important;
+  }
+  ul {
+    padding-left: 24px;
+  }
+  .works-items .col {
+    padding: 1.5rem!important;
+  }
+}
 #hero {
   padding: 1rem;
   max-height: fit-content;
@@ -59,7 +84,7 @@ li {
 }
 .hero-col-text {
   position: absolute;
-  right: 40%;
+  right: 70%;
   top: 36%;
 }
 .hero-col-img {
@@ -76,11 +101,12 @@ li {
 }
 .hero-title {
   font-family: 'Satisfy', cursive;
-  font-size: 9vw;
+  font-size: 10vw;
   position: absolute;
   color: #ffc0cb;
   text-shadow: 5px 5px #558abb;
   z-index: 1;
+  letter-spacing: 13px;
 }
 .hero-title::before {
   content: "Mya Thet Chel";
@@ -89,6 +115,10 @@ li {
   bottom: 16px;
   color: #000;
   text-shadow: none;
+  letter-spacing: normal;
+}
+.hero-title > span {
+  color: #94f3f3;
 }
 @keyframes gradient {
 	0% {
@@ -103,12 +133,12 @@ li {
 }
 
 .main-content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-family: 'Satisfy', cursive;
   text-align: center;
   color: #ffc0cb;
   text-shadow: 4px 3px #175d8b;
-  margin: 0;
+  margin: 2rem 0;
 }
 section {
  background-color: #99c7d329;
@@ -129,30 +159,42 @@ section:nth-of-type(2n) {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: start;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   grid-auto-columns: 1fr;
-  grid-column-gap: 30px;
+  grid-column-gap: 3rem;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
+.about-row img {
+  width: 75%;
+  display: block;
+  margin: 1rem auto;
+  border-right: 10px #94f3f3 solid;
+  border-left: 10px pink solid;
+  border-top: 10px pink solid;
+  border-bottom: 10px #94f3f3 solid;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 991px) {
   .about-row {
-    grid-row-gap: 60px;
+    margin-top: 0;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   .hero-col-text {
-    left: 10%;
-    top: 30%;
+    left: 12%;
+    top: 40%;
   }
   .hero-title {
-    font-size: 24vw;
+    font-size: 18vw;
+    letter-spacing: 10px;
   }
   .hero-title::before {
     font-size: 1.5rem;
@@ -213,6 +255,7 @@ nav li a {
 nav li a:hover {
   color: #000;
   text-decoration: line-through;
+  transform: translate(0px, -4px);
 }
 .nav-active {
    color: #000;
@@ -412,22 +455,18 @@ opacity: 0;
 
 /*--button--*/
 .btn, a.btn, button.btn {
-   font-size: 1.2em;
-   display: block;
-   margin: 3rem auto 1rem;
-   font-weight: 700;
-   line-height: 1.5;
-   width: 350px;
-   max-width: 100%;
-   padding: 1rem;
-   cursor: pointer;
-   user-select: none;
-   transition: all 0.3s;
-   text-align: center;
-   text-decoration: none;
-   letter-spacing: 0.1em;
-   color: #212529;
-   font-family: 'Source Code Pro', monospace;
+  display: block;
+  font-size: 1.2em;
+  margin: 3rem auto 0;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 350px;
+  padding: 1rem;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
 }
 a.btn-border {
   border: 2px solid #000;
@@ -465,7 +504,7 @@ a.btn-border:hover {
   .skill-wrap div {
     padding: 8px;
     margin: 10px 0;
-    font-size: 17px;
+    font-size: 16px;
 }
 }
 img.vector-icon {
@@ -483,18 +522,6 @@ img.vector-icon {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
-
-/*--about--*/
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 786px) {
-  .row {
-    grid-template-columns: 1fr;
-  }
 }
 
 /*--experience--*/
@@ -572,23 +599,83 @@ img.vector-icon {
   color: #175d8b;
   font-weight: bold;
 }
-
 .works-items {
-  margin: 4rem 0;
+  margin-top: 2rem;
+  font-size: 15px!important;
 }
 .works-items .row {
-  gap: 4rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.works-items .col-left {
-  background-color: #ffc0c7;
-    padding: 1.5rem;
-    border: 2px solid;
-    border-radius: 10px;
-}
-.works-items .col-right {
-  background-color: #175d8b;
-  padding: 1.5rem;
-  border: 2px solid;
+.works-items .col:nth-child(2n) {
+  padding: 2rem;
+  box-shadow: 2px 2px 12px 2px #e7b7bc;
   border-radius: 10px;
+}
+.works-items .col {
+  padding: 2rem;
+  box-shadow: 2px 2px 12px 2px #b2dbdb;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.works-items .col:hover {
+  transform: translate(0px, -5px);
+}
+.project-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.tools {
+  margin-bottom: 1rem;
+}
+.works-items .col:nth-child(2n) > .tools span {
+  background-color: #f5e2e4;
+}
+.tools span {
+  display: inline-flex;
+  border: 1px solid;
+  padding: 3px 6px;
+  margin: 3px 0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #e0f1f1;
+}
+a.to-page {
+  color: #212529;
+  display: block;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .works-items .row {
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .works-items .row {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+.sns {
+  text-align: center;
+  margin-top: 3rem;
+}
+.sns a {
+  color: #212529;
+  margin: 0 1rem;
+  font-size: 20px;
+}
+.sns a:hover {
+  color: #FFC0CB;
+}
+footer {
+  background-color: black;
   color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 13px;
 }
