@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap');
 * {
   box-sizing: border-box
 }
@@ -49,7 +51,7 @@ li {
   margin-bottom: 10px;
 }
 @media screen and (max-width:600px) {
-  p, li  {
+  p, li, td  {
     font-size: 16px;
   }
   .main-content h1 {
@@ -72,6 +74,7 @@ li {
     padding: 1.5rem!important;
   }
 }
+
 #hero {
   padding: 1rem;
   max-height: fit-content;
@@ -107,7 +110,18 @@ li {
   text-shadow: 5px 5px #558abb;
   z-index: 1;
   letter-spacing: 13px;
+  left: 30%;
+  top: 36%;
 }
+/* .hero-title {
+  font-family: 'Satisfy', cursive;
+  font-size: 10vw;
+  position: absolute;
+  color: #ffc0cb;
+  text-shadow: 5px 5px #558abb;
+  z-index: 1;
+  letter-spacing: 13px;
+} */
 .hero-title::before {
   content: "Mya Thet Chel";
   position: absolute;
@@ -195,6 +209,7 @@ section:nth-of-type(2n) {
   .hero-title {
     font-size: 18vw;
     letter-spacing: 10px;
+    left: 10%;
   }
   .hero-title::before {
     font-size: 1.5rem;
@@ -473,6 +488,7 @@ a.lang:hover .lang-change {
   margin: 3rem auto 0;
   font-weight: 600;
   line-height: 1.5;
+  max-width: 100%;
   width: 350px;
   padding: 1rem;
   transition: all 0.3s;
@@ -499,8 +515,9 @@ a.btn-border:hover {
   align-items: center;
   padding: 10px;
   background: #ffffff;
+
   box-shadow: 0 6px 4px rgb(231 231 231);
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 7px;
   width: auto;
   transition: 0.5s;
@@ -510,8 +527,26 @@ a.btn-border:hover {
   transform: translate(0px, -2px);
 }
 .skill-wrap.soft div {
-  background-color: #eb8193;
-  color: #fff;
+    background-color: #175d8b;
+    width: 90%;
+    box-shadow: none;
+    color: white;
+    border: 1px solid;
+}
+.skill-wrap.soft table td:nth-child(1) {
+  width: 25%;
+}
+@media screen and (max-width: 600px) {
+  .skill-wrap.soft div {
+    width: 100%;
+  }
+  .skill-wrap.soft table td {
+    width: 100%!important;
+    display: block;
+  }
+  .skill-wrap.soft table td:nth-child(2) {
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 786px) {
   .skill-wrap div {
