@@ -373,7 +373,7 @@ padding:10px;
 display: block;
 text-transform: uppercase;
 letter-spacing: 0.1em;
-font-weight: bold;
+font-weight: 500;
 writing-mode: horizontal-tb;
 display: inline-block;
 }
@@ -486,7 +486,7 @@ a.lang:hover .lang-change {
   display: block;
   font-size: 1.2em;
   margin: 3rem auto 0;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   max-width: 100%;
   width: 350px;
