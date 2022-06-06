@@ -2,19 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap');
-
 * {
   box-sizing: border-box
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  
   font-size: 18px;
   margin: 0;
 }
-
-p {
+#eng-wrapper {
   font-family: 'Source Code Pro', monospace;
+}
+#jap-wrapper {
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+p {
   line-height: 1.5;
 }
 
@@ -128,7 +131,6 @@ li {
   background-color: #94f3f3;
   border-radius: 100%;
 }
-
 .hero-title {
   font-family: 'Satisfy', cursive;
   font-size: 10vw;
@@ -141,15 +143,6 @@ li {
   top: 36%;
 }
 
-/* .hero-title {
-  font-family: 'Satisfy', cursive;
-  font-size: 10vw;
-  position: absolute;
-  color: #ffc0cb;
-  text-shadow: 5px 5px #558abb;
-  z-index: 1;
-  letter-spacing: 13px;
-} */
 .hero-title::before {
   content: "Mya Thet Chel";
   position: absolute;
@@ -302,7 +295,6 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  font-family: 'Source Code Pro', monospace;
   color: #000;
   display: block;
   font-weight: 400;
@@ -582,7 +574,6 @@ a.btn-border:hover {
   align-items: center;
   padding: 10px;
   background: #ffffff;
-
   box-shadow: 0 6px 4px rgb(231 231 231);
   border-radius: 8px;
   margin: 7px;
@@ -590,7 +581,12 @@ a.btn-border:hover {
   transition: 0.5s;
   border: 2px solid;
 }
-
+.skill-wrap.soft {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
 .skill-wrap div:hover {
   transform: translate(0px, -2px);
 }
@@ -831,4 +827,5 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
   font-size: 13px;
+  font-family: 'Source Code Pro', monospace;
 }

@@ -10,27 +10,24 @@
 	<title>ポートフォリオ - ミャテッチェ</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/stye.css">
-	<link rel="stylesheet" href="css/style.scss">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<style>
-		body {
+		p,nav li a {
 			font-family: 'Zen Maru Gothic', sans-serif;
 		}
-
-		.main-content.jap h1,
-		p,
-		nav li a {
+		.main-content.jap h1 {
 			font-family: 'Zen Maru Gothic', sans-serif;
+			font-size: 2.4rem;
+			letter-spacing: 7px;
 		}
-
 		.hero-title {
 			font-family: 'Zen Maru Gothic', sans-serif;
 			font-weight: bold;
 			letter-spacing: 0;
-			font-size: 7vw;
+			font-size: 6.5vw;
 		}
 
 		.hero-title::before {
@@ -52,381 +49,366 @@
 </head>
 
 <body>
-	<div id="hero" class="header">
-		<div class="hero-title">
-			<span>ポート</span>フォリオ
+	<div id="jap-wrapper">
+		<div id="hero" class="header">
+			<div class="hero-title">
+				<span>ポート</span>フォリオ
+			</div>
 		</div>
-		<!-- <div class="hero-row">
-			<div class="hero-col-text">
-				<div class="hero-title">
-					<span>Mya Thet Chel</span>ポートフォリオ
-				</div>
-			</div>
-			<div class="hero-col-img">
-
-			</div>
-		</div> -->
-	</div>
-
-	<!--Navigation start-->
-	<!--pc nav-->
-	<div id="navbar">
-		<nav class="navigation">
-			<ul>
-				<li class="nav-logo-wrap">
-					<a href="#"><img src="img/favicon.png" alt="" class="nav-logo"></a>
-				</li>
-				<li class="nav-side-menu">
-					<a href="#about"><span>自己紹介</span></a>
-					<a href="#skills">スキル・言語</a>
-					<a href="#experience">職務経歴</a>
-					<a href="#projects">プロジェクト</a>
-					<a href="index.html" target="_blank" class="lang">
-						<i class="fa-solid fa-globe"></i>
-						<span class="lang-change">英語</span>
-					</a>
-				</li>
-
-			</ul>
-		</nav>
-	</div>
-	<!--sp nav-->
-	<div class="">
-		<div class="openbtn1"><span></span><span></span><span></span></div>
-		<nav id="g-nav">
-			<div id="g-nav-list">
-				<!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+	
+		<!--Navigation start-->
+		<!--pc nav-->
+		<div id="navbar">
+			<nav class="navigation">
 				<ul>
-					<li><a href="#"><img src="img/favicon.png" alt=""></a></li>
-					<li><a href="#about">自己紹介</a></li>
-					<li><a href="#skills">スキル・言語</a></li>
-					<li><a href="#experience">職務経歴</a></li>
-					<li><a href="#projects">プロジェクト</a></li>
-					<li><i class="fa-solid fa-globe"></i><a href="jp.html" target="_blank">日本語</a>/<a href="index.html"
-							target="_blank">英語</a></li>
+					<li class="nav-logo-wrap">
+						<a href="#"><img src="img/favicon.png" alt="" class="nav-logo"></a>
+					</li>
+					<li class="nav-side-menu">
+						<a href="#about"><span>自己紹介</span></a>
+						<a href="#skills">スキル・言語</a>
+						<a href="#experience">職務経歴</a>
+						<a href="#projects">プロジェクト</a>
+						<a href="index.html" target="_blank" class="lang">
+							<i class="fa-solid fa-globe"></i>
+							<span class="lang-change">英語</span>
+						</a>
+					</li>
+	
 				</ul>
-
-			</div>
-		</nav>
-		<div class="circle-bg"></div>
-	</div>
-
-	<!--Navigation end-->
-
-	<!--main content start here-->
-	<div class="main-content jap">
-		<section id="about">
-			<div class="wrapper reveal">
-				<h1><span>自己紹介</span></h1>
-				<div class="about-row">
-					<div>
-						<img src="img/my-profile.png" alt="">
+			</nav>
+		</div>
+		<!--sp nav-->
+		<div class="">
+			<div class="openbtn1"><span></span><span></span><span></span></div>
+			<nav id="g-nav">
+				<div id="g-nav-list">
+					<!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+					<ul>
+						<li><a href="#"><img src="img/favicon.png" alt=""></a></li>
+						<li><a href="#about">自己紹介</a></li>
+						<li><a href="#skills">スキル・言語</a></li>
+						<li><a href="#experience">職務経歴</a></li>
+						<li><a href="#projects">プロジェクト</a></li>
+						<li><i class="fa-solid fa-globe"></i><a href="jp.html" target="_blank">日本語</a>/<a href="index.html"
+								target="_blank">英語</a></li>
+					</ul>
+	
+				</div>
+			</nav>
+			<div class="circle-bg"></div>
+		</div>
+	
+		<!--Navigation end-->
+	
+		<!--main content start here-->
+		<div class="main-content jap">
+			<section id="about">
+				<div class="wrapper reveal">
+					<h1><span>自己紹介</span></h1>
+					<div class="about-row">
+						<div>
+							<img src="img/my-profile.png" alt="">
+						</div>
+						<div>
+							<script src="https://unpkg.com/ityped@0.0.10"></script>
+							<h3>こんにちは！<br><span class="ityped"></span></h3>
+							<script>
+								window.ityped.init(document.querySelector('.ityped'), {
+									strings: ['ミャテッチェと申します。', 'どうぞよろしくお願いいたします！'],
+									loop: true
+								})
+							</script>
+							<p>
+								ヤンゴン外国語大学を日本語専門で卒業後、オリジナルのぼり旗販売・広告企業のミャンマー支社にデータ処理やデザイン制作者として入社しました。
+								その後日本にある本社に移転となり、マーケティング部WEBデザイン班のコーディングチームにコーダーとして３年間働きました。
+								現在は東京の広告・ブランディング企業にウエブデザイナー、マークアップエンジニアとして活動しております。<br>
+								Web業界での実務経験5年以上で、HTML/CSS、Materialize
+								CSS、JavaScript、jQuery、PHP利用のレスポンシブサイト作成、WordPress利用の大学のホームページ作成、 Illustrator,
+								Photoshop、Adobe XD 、Figmaのデザインツール利用してラフデザイン作成に経験があります。
+							</p>
+							<ul>
+								<li>生年月日：1996年5月12日（26歳）</li>
+								<li>大学: ヤンゴン外国語大学日本語専門卒業</li>
+								<li>国籍: ミャンマー</li>
+								<li>住所: 江東区、東京都</li>
+								<li>メールアドレス: <a href="mailto:myathetchel00@gmail.com">myathetchel00@gmail.com</a></li>
+							</ul>
+						</div>
 					</div>
 					<div>
-						<script src="https://unpkg.com/ityped@0.0.10"></script>
-						<h3>こんにちは！<br><span class="ityped"></span></h3>
-						<script>
-							window.ityped.init(document.querySelector('.ityped'), {
-								strings: ['ミャテッチェと申します。', 'どうぞよろしくお願いいたします！'],
-								loop: true
-							})
-						</script>
+						<a href="" class="btn btn-border">履歴書・職務経歴書はこちら</a>
+					</div>
+	
+				</div>
+			</section>
+			<section id="skills">
+				<div class="wrapper reveal">
+					<h1>スキル・言語</h1>
+					<h2>スキル</h2>
+					<div class="skill-wrap">
+						<div><img class="vector-icon" src="svg/html.svg" alt="HTML5">HTML</div>
+						<div><img class="vector-icon" src="svg/css3.svg" alt="CSS">CSS</div>
+						<div><img class="vector-icon" src="svg/wordpress.svg" alt="WordPress">WordPress</div>
+						<div><img class="vector-icon" src="svg/materializecss.svg" alt="Materialize">Materialize CSS</div>
+						<div><img class="vector-icon" src="svg/adobe-xd.svg" alt="Adobe XD">Adobe XD</div>
+						<div><img class="vector-icon" src="svg/figma.svg" alt="Figma">Figma</div>
+						<div><img class="vector-icon" src="svg/adobe-illustrator.svg" alt="Adobe Illustrator">Adobe Illustrator</div>
+						<div><img class="vector-icon" src="svg/adobe-photoshop.svg" alt="Adobe Photoshop">Adobe Photoshop</div>
+						<div><img class="vector-icon" src="svg/bootstrap.svg" alt="Bootstrap">Bootstrap</div>
+						<div><img class="vector-icon" src="svg/javascript.svg" alt="JavaScript">JavaScript</div>
+						<div><img class="vector-icon" src="svg/jquery.svg" alt="jQuery">jQuery</div>
+						<div><img class="vector-icon" src="svg/github.svg" alt="GitHub">GitHub</div>
+						<div><img class="vector-icon" src="svg/php.svg" alt="PHP">PHP</div>
+						<div><img class="vector-icon" src="svg/google-analytics.svg" alt="Google Analystics">Google Analystics</div>
+						<div><img class="vector-icon" src="svg/visual-studio-code.svg" alt="Visual Studio">Visual Studio</div>
+						<div><img class="vector-icon" src="svg/responsive.svg" alt="Responsive Website">Responsive Website</div>
+						<div><img class="vector-icon" src="svg/google.svg" alt="Responsive Website">Google Workspace Tools
+						</div>
+					</div>
+	
+					<h2 class="mt-3">自己PR</h2>
+					<div class="skill-wrap soft">
 						<p>
-							ヤンゴン外国語大学を日本語専門で卒業後、オリジナルのぼり旗販売・広告企業のミャンマー支社にデータ処理やデザイン制作担当として入社しました。
-							その後日本にある本社に移転となり、マーケティング部WEBデザイン班のコーディングチームにコーダーとして３年間働きました。
-							現在は東京の広告・ブランディング企業にウエブデザイナー、マークアップエンジニアとして活動しております。<br>
-							Web業界での実務経験5年以上で、HTML/CSS、Materialize
-							CSS、JavaScript、jQuery、PHP利用のレスポンシブサイト作成、WordPress利用の大学のホームページ作成、 Illustrator,
-							Photoshop、Adobe XD 、Figmaのデザインツール利用してラフデザイン作成に経験があります。
-						</p>
-						<ul>
-							<li>生年月日：1996年5月12日（26歳）</li>
-							<li>大学: ヤンゴン外国語大学日本語専門卒業</li>
-							<li>国籍: ミャンマー</li>
-							<li>住所: 江東区、東京都</li>
-							<li>メールアドレス: <a href="mailto:myathetchel00@gmail.com">myathetchel00@gmail.com</a></li>
-						</ul>
+							私の強みは、自己成長に必要な知識を積極的に身につける「吸収力」です。<br>
+							これは、大学を卒業後、デザインやコーディングの知識がなかった私は、ウエブデザイン班のコーディングチームメンバーとして活力できるようになったことで発揮されました。
+							当初はIllustrator や Photoshopなどのデザインツールの知識もコーディングのやり方も全く分からず、困りましたが、自分でチャレンジしながらミスから学び、挑戦精神を持ちつつ、勉強に熱心に取り込みました。<br>
+							その結果、2年目から自分ができる範囲が広げてきて、後輩たちへのコーディング指導やタスクの管理まで担当することになりました。<br>
+							最初は不安や心配な気持ちがありましたが、責任感を持ちつつ、メンバーと相談しやすい関係を作り、人から信頼される行動を大事にして、より良いチームワークに協力しました。<br>
+							今は、企業や大学などのホームページデザイン作成・フロントエンジニアとして活躍しております。<br>
+							自分の考えとお客様のニーズを加えたデザイン作りやお客様の満足度を高めたサイト構築に自信があります。<br>
+							私は自分なりにやりがいや喜びを感じながら成長していける職場環境が好きで、その環境造りに自分が持ってる知識や力を全力で生かしていきたいと思います。
+						</p>					
 					</div>
+	
+					<h2 class="mt-3">言語</h2>
+					<ul>
+						<li>ミャンマー語 (母語)</li>
+						<li>英語 (中級)</li>
+						<li>日本語 (上級)</li>
+					</ul>
 				</div>
-				<div>
-					<a href="" class="btn btn-border">履歴書・職務経歴書はこちら</a>
-				</div>
-
-			</div>
-		</section>
-		<section id="skills">
-			<div class="wrapper reveal">
-				<h1>スキル・言語</h1>
-				<h2>スキル</h2>
-				<div class="skill-wrap">
-					<div><img class="vector-icon" src="svg/html.svg" alt="HTML5">HTML</div>
-					<div><img class="vector-icon" src="svg/css3.svg" alt="CSS">CSS</div>
-					<div><img class="vector-icon" src="svg/wordpress.svg" alt="WordPress">WordPress</div>
-					<div><img class="vector-icon" src="svg/materializecss.svg" alt="Materialize">Materialize CSS</div>
-					<div><img class="vector-icon" src="svg/adobe-xd.svg" alt="Adobe XD">Adobe XD</div>
-					<div><img class="vector-icon" src="svg/figma.svg" alt="Figma">Figma</div>
-					<div><img class="vector-icon" src="svg/adobe-illustrator.svg" alt="Adobe Illustrator">Adobe
-						Illustrator</div>
-					<div><img class="vector-icon" src="svg/adobe-photoshop.svg" alt="Adobe Photoshop">Adobe Photoshop
-					</div>
-					<div><img class="vector-icon" src="svg/bootstrap.svg" alt="Bootstrap">Bootstrap</div>
-					<div><img class="vector-icon" src="svg/javascript.svg" alt="JavaScript">JavaScript</div>
-					<div><img class="vector-icon" src="svg/jquery.svg" alt="jQuery">jQuery</div>
-					<div><img class="vector-icon" src="svg/github.svg" alt="GitHub">GitHub</div>
-					<div><img class="vector-icon" src="svg/php.svg" alt="PHP">PHP</div>
-					<div><img class="vector-icon" src="svg/google-analytics.svg" alt="Google Analystics">Google
-						Analystics</div>
-					<div><img class="vector-icon" src="svg/visual-studio-code.svg" alt="Visual Studio">Visual Studio
-					</div>
-					<div><img class="vector-icon" src="svg/responsive.svg" alt="Responsive Website">Responsive Website
-					</div>
-					<div><img class="vector-icon" src="svg/google.svg" alt="Responsive Website">Google Workspace Tools
-					</div>
-				</div>
-
-				<h2 class="mt-3">自己PR</h2>
-				<div class="skill-wrap soft">
-					私の強みは、自己成長に必要な知識を積極的に身につける「吸収力」です。
-					これは、大学を卒業後、デザインやコーディングの知識がなかった私は、ウエブデザイン班のコーディングチームメンバーとして活力できるようになったことで発揮されました。
-					当初はIllustrator や
-					Photoshopなどのデザインツールの知識もコーディングのやり方も全く分からず、困りましたが、自分でチャレンジしながらミスから学び、挑戦精神を持ちつつ、勉強に熱心に取り込みました。
-					その結果、2年目から自分ができる範囲が広げてきて、後輩たちへのコーディング指導やタスクの管理まで担当することになりました。
-					最初は不安や心配な気持ちがありましたが、責任感を持ちつつ、社員と相談しやすい関係を作り、人から信頼される行動を大事にして、より良いチームワークに協力しました。
-					今は、企業や大学などのホームページデザイン作成のフロントエンジニアとして活躍しております。
-					お客様の目線から考え、自分の考えとお客様のニーズを加えたデザイン作りやお客様の満足度を高めたサイト構築に自信があります。
-					私は自分なりにやりがいや喜びを感じながら成長していける職場環境が好きで、その環境造りに自分が持ってる知識や力を全力で生かしていきたいと思います。
-
-				</div>
-
-				<h2 class="mt-3">言語</h2>
-				<ul>
-					<li>ミャンマー語 (母語)</li>
-					<li>英語 (中級)</li>
-					<li>日本語 (上級)</li>
-				</ul>
-			</div>
-
-		</section>
-		<section id="experience">
-			<div class="wrapper reveal">
-				<h1>職務経歴</h1>
-				<div class="experience-wrap">
-					<div class="experience-balloon reveal">
-						<div class="experience-header">
-							<div class="job-title">データ分析/ デザイナー</div>
-							<div class="company-name">株式会社イタミアート (ミャンマー支店)</div>
-							<div class="los">2017年11月 ～ 2019年6月</div>
+	
+			</section>
+			<section id="experience">
+				<div class="wrapper reveal">
+					<h1>職務経歴</h1>
+					<div class="experience-wrap">
+						<div class="experience-balloon reveal">
+							<div class="experience-header">
+								<div class="job-title">データ処理/ デザイン制作</div>
+								<div class="company-name">株式会社イタミアート (ミャンマー支店)</div>
+								<div class="los">2017年11月 ～ 2019年6月</div>
+							</div>
+							<div class="responsibility">
+								<ul>
+									<li>
+										Adobe
+										Illustrator、Photoshopや素材などを利用してお客様からいただいた手書きオーダーシートや参考データを見ながらのぼり旗や横断幕、タペストリーなどのデザイン制作。
+									</li>
+									<li>
+										ミャンマー支社と日本本社とのやり取りや資料指示を日本語⇌ミャンマー語通訳担当。
+									</li>
+									<li>印刷用データの処理（カラー、文字のアウトライン化、画像のリンクなどのチェック）。</li>
+								</ul>
+							</div>
 						</div>
-						<div class="responsibility">
-							<ul>
-								<li>
-									Adobe
-									Illustrator、Photoshopや素材などを利用してお客様からいただいた手書きオーダーシートや参考データを見ながらのぼり旗や横断幕、タペストリーなどのデザイン制作。
-								</li>
-								<li>
-									ミャンマー支社と日本本社とのやり取りや資料指示を日本語⇌ミャンマー語通訳担当。
-								</li>
-								<li>印刷用データの処理（カラー、文字のアウトライン化、画像のリンクなどのチェック）。</li>
-							</ul>
+						<div class="experience-balloon reveal">
+							<div class="experience-header">
+								<div class="job-title">ウエブコーダー</div>
+								<div class="company-name">株式会社イタミアート (本社)</div>
+								<div class="los">2019年6月 ～ 2021年2月</div>
+							</div>
+							<div class="responsibility">
+								<ul>
+									<li>のぼり旗や横断幕、タペストリー等印刷系の販促グッズを紹介する広告用ランディングページや新商品のクッションページのレスポンシブ対応を制作。
+										基本はウエブデザイナーからもらったラフを参考に作成。
+									</li>
+									<li>WordPress使用の自社公式サイトや採用サイト、オウンドメディアサイトの作成。WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加をの対応。
+									</li>
+									<li>商品ページ用バナー作成にデザインのヘルプ。（画像の切り抜き、写真合成等）</li>
+									<li>ミャンマーチームのタスク管理、コーディング指導、ミャンマー支社と本社とのやり取り担当。</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="experience-balloon reveal">
-						<div class="experience-header">
-							<div class="job-title">ウエブコーダー</div>
-							<div class="company-name">株式会社イタミアート (本社)</div>
-							<div class="los">2019年6月 ～ 2021年2月</div>
-						</div>
-						<div class="responsibility">
-							<ul>
-								<li>のぼり旗や横断幕、タペストリー等印刷系の販促グッズを紹介する広告用ランディングページや新商品のクッションページのレスポンシブ対応を制作。
-									基本はウエブデザイナーからもらったラフを参考に作成。
-								</li>
-								<li>WordPress使用の自社公式サイトや採用サイト、オウンドメディアサイトの作成。WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加をの対応。
-								</li>
-								<li>商品ページ用バナー作成にデザインのヘルプ。（画像の切り抜き、写真合成等）</li>
-								<li>ミャンマーチームのタスク管理、コーディング指導、ミャンマー支社と本社とのやり取り担当。</li>
-							</ul>
-						</div>
-					</div>
-					<div class="experience-balloon-last reveal">
-						<div class="experience-header">
-							<div class="job-title">ウエブデザイナー/マークアップエンジニア</div>
-							<div class="company-name">株式会社ネクステラ</div>
-							<div class="los">2021年3月 ～ 現在</div>
-						</div>
-						<div class="responsibility">
-							<ul>
-								<li>HTML、CSS、JavaScriptを利用したレスポンシブサイト作成。</li>
-								<li>Adobe Illustrator、Photoshop、AdobeXD やFigmaなどのデザインツールを利用したウエブサイトデザインワイヤー作成.</li>
-								<li>クライアントサイトの更新、修正やサイト管理。</li>
-								<li>WordPress使用のサイト構築。</li>
-								<li>Microsoft powerpointやグーグルワックスペースアプリを利用してクライアント側からサイトの更新ができるように
-									サイトの仕様マニュアル作成。</li>
-								<li>お客様の希望に従って、デザインアイデア出しから開発、サイトリリースまでのスケジュール作成。</li>
-								<li>担当したクライアントサイトのグーグルアナリティクスレポート作成、提出。</li>
-							</ul>
+						<div class="experience-balloon-last reveal">
+							<div class="experience-header">
+								<div class="job-title">ウエブデザイナー/マークアップエンジニア</div>
+								<div class="company-name">株式会社ネクステラ</div>
+								<div class="los">2021年3月 ～ 現在</div>
+							</div>
+							<div class="responsibility">
+								<ul>
+									<li>HTML、CSS、JavaScriptを利用したレスポンシブサイト作成。</li>
+									<li>Adobe Illustrator、Photoshop、AdobeXD やFigmaなどのデザインツールを利用したウエブサイトデザインワイヤー作成.</li>
+									<li>クライアントサイトの更新、修正やサイト管理。</li>
+									<li>WordPress使用のサイト構築。</li>
+									<li>Microsoft powerpointやグーグルワックスペースアプリを利用してクライアント側からサイトの更新ができるように
+										サイトの仕様マニュアル作成。</li>
+									<li>お客様の希望に従って、デザインアイデア出しから開発、サイトリリースまでのスケジュール作成。</li>
+									<li>担当したクライアントサイトのグーグルアナリティクスレポート作成、提出。</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section id="projects">
-			<div class="wrapper reveal">
-				<h1>プロジェクト</h1>
-				<div class="works-items">
-					<div class="row">
-						<!--1-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
+			</section>
+			<section id="projects">
+				<div class="wrapper reveal">
+					<h1>プロジェクト</h1>
+					<div class="works-items">
+						<div class="row">
+							<!--1-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">自社ECサイトの運用</div>
+								<div class="tools">
+									<span>HTML/CSS</span>
+									<span>Materialize CSS</span>
+									<span>PHP</span>
+									<span>jQuery</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									販売サイトのリニューアル制作や新商品の注文ページ作成。
+									複数人でコーディングを行う体制だったので、この案件のみに適用するコーディングルールを設け制作。
+									デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使えるレスポンシブサイト作成。
+								</p>
+								<img src="img/ec-site.png" alt="">
 							</div>
-							<div class="project-title">自社ECサイトの運用</div>
-							<div class="tools">
-								<span>HTML/CSS</span>
-								<span>Materialize CSS</span>
-								<span>PHP</span>
-								<span>jQuery</span>
-								<span>Responsive</span>
+							<!--2-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">自社公式サイト作成</div>
+								<div class="tools">
+									<span>WordPress</span>
+									<span>Elementor</span>
+									<span>HTML/CSS</span>
+									<span>PHP</span>
+									<span>JavaScript</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									WordPress使用の自社公式サイトの更新、修正、コンテンツ追加などの対応。
+								</p>
+								<img src="img/itamiarts-official.png" alt="">
+								<a href="https://www.itamiarts.co.jp/" target="_blank" class="to-page">View Website <i
+										class="fa-solid fa-circle-arrow-right"></i></a>
 							</div>
-							<p>
-								販売サイトのリニューアル制作や新商品の注文ページ作成。
-								複数人でコーディングを行う体制だったので、この案件のみに適用するコーディングルールを設け制作。
-								デザインの部分で、いくつか同じデザインの派生ページが発生した為、マークアップ・スタイル記述はパーツを細分化して、どのブロックでも使えるレスポンシブサイト作成。
-							</p>
-							<img src="img/ec-site.png" alt="">
-						</div>
-						<!--2-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
+							<!--3-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">自社リクルートサイト作成</div>
+								<div class="tools">
+									<span>WordPress</span>
+									<span>Elementor</span>
+									<span>HTML/CSS</span>
+									<span>PHP</span>
+									<span>JavaScript</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									WordPress使用の自社採用サイト、オウンドメディアサイトの作成。
+									WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加の対応。
+								</p>
+								<img src="img/itamiarts-recruit.png" alt="">
+								<a href="https://itamiarts-recruit.com/" target="_blank" class="to-page">View Website <i
+										class="fa-solid fa-circle-arrow-right"></i></a>
 							</div>
-							<div class="project-title">自社公式サイト作成</div>
-							<div class="tools">
-								<span>WordPress</span>
-								<span>Elementor</span>
-								<span>HTML/CSS</span>
-								<span>PHP</span>
-								<span>JavaScript</span>
-								<span>Responsive</span>
+							<!--4-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">クライアントのホームページ作成</div>
+								<div class="tools">
+									<span>WordPress</span>
+									<span>Elementor</span>
+									<span>Customize Theme</span>
+									<span>JetPlugins</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									Wordpress利用のウエブサイトリニューアル。<br>
+									デザインのアイデア出しからラフ作成、コーディング、リリースまでのスケジュール作成、ユーザーマニュアル作成を対応。
+								</p>
+								<img src="img/shibuya-archery-web.png" alt="">
+								<a href="https://www.shibuya-archery.com/" target="_blank" class="to-page">View Website <i
+										class="fa-solid fa-circle-arrow-right"></i></a>
 							</div>
-							<p>
-								WordPress使用の自社公式サイトの更新、修正、コンテンツ追加などの対応。
-							</p>
-							<img src="img/itamiarts-official.png" alt="">
-							<a href="https://www.itamiarts.co.jp/" target="_blank" class="to-page">View Website <i
-									class="fa-solid fa-circle-arrow-right"></i></a>
-						</div>
-						<!--3-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
+							<!--5-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">大学のプログラムサイト作成</div>
+								<div class="tools">
+									<span>WordPress</span>
+									<span>Custom css</span>
+									<span>Customize Theme</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									ニューモーフィズムデザインを使った、大学の社会連携プログラムサイト作成。<br>
+									新サイト作成で、サイバー内のWordPressインストールからサイト構築、公開までの作業、マニュアル作成全部対応。
+								</p>
+								<img src="img/socialcooperation.jissen.png" alt="">
+								<a href="https://socialcooperation.jissen.ac.jp/" target="_blank" class="to-page">View
+									Website <i class="fa-solid fa-circle-arrow-right"></i></a>
 							</div>
-							<div class="project-title">自社リクルートサイト作成</div>
-							<div class="tools">
-								<span>WordPress</span>
-								<span>Elementor</span>
-								<span>HTML/CSS</span>
-								<span>PHP</span>
-								<span>JavaScript</span>
-								<span>Responsive</span>
+							<!--6-->
+							<div class="col">
+								<div class="deco-spot">
+									<span class="red"></span>
+									<span class="yellow"></span>
+									<span class="green"></span>
+								</div>
+								<div class="project-title">大学公式サイト作成</div>
+								<div class="tools">
+									<span>HTML/CSS</span>
+									<span>WordPress</span>
+									<span>Customize Theme</span>
+									<span>Customize Css</span>
+									<span>Responsive</span>
+								</div>
+								<p>
+									WordPress利用のサイトリニューアル。<br>
+									デザインナーからもらったラフデザインを基にして、サイト作成。
+								</p>
+								<img src="img/keiei-kanto-gakuin.png" alt="">
+								<a href="http://keiei.kanto-gakuin.ac.jp/" target="_blank" class="to-page">View Website <i
+										class="fa-solid fa-circle-arrow-right"></i></a>
 							</div>
-							<p>
-								WordPress使用の自社採用サイト、オウンドメディアサイトの作成。
-								WordPressテーマのカスタマイズやプラグインの使用で、サイト修正やページ追加の対応。
-							</p>
-							<img src="img/itamiarts-recruit.png" alt="">
-							<a href="https://itamiarts-recruit.com/" target="_blank" class="to-page">View Website <i
-									class="fa-solid fa-circle-arrow-right"></i></a>
-						</div>
-						<!--4-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
-							</div>
-							<div class="project-title">クライアントのホームページ作成</div>
-							<div class="tools">
-								<span>WordPress</span>
-								<span>Elementor</span>
-								<span>Customize Theme</span>
-								<span>JetPlugins</span>
-								<span>Responsive</span>
-							</div>
-							<p>
-								Renew the whole website using Wordpress.
-								Frontend development starting from design, codes, scheduling, release and documentation.
-								Effectively communicating with customer to deliver final product with 100% satification.
-							</p>
-							<img src="img/shibuya-archery-web.png" alt="">
-							<a href="https://www.shibuya-archery.com/" target="_blank" class="to-page">View Website <i
-									class="fa-solid fa-circle-arrow-right"></i></a>
-						</div>
-						<!--5-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
-							</div>
-							<div class="project-title">大学のプログラムサイト作成</div>
-							<div class="tools">
-								<span>WordPress</span>
-								<span>Custom css</span>
-								<span>Customize Theme</span>
-								<span>Responsive</span>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt esse ipsum
-								fugiat dolores fugit explicabo eaque et pariatur perferendis. Expedita quo voluptate
-								voluptatum vero voluptatem odit quisquam libero doloremque?
-							</p>
-							<img src="img/socialcooperation.jissen.png" alt="">
-							<a href="https://socialcooperation.jissen.ac.jp/" target="_blank" class="to-page">View
-								Website <i class="fa-solid fa-circle-arrow-right"></i></a>
-						</div>
-						<!--6-->
-						<div class="col">
-							<div class="deco-spot">
-								<span class="red"></span>
-								<span class="yellow"></span>
-								<span class="green"></span>
-							</div>
-							<div class="project-title">大学公式サイト作成</div>
-							<div class="tools">
-								<span>HTML/CSS</span>
-								<span>WordPress</span>
-								<span>Customize Theme</span>
-								<span>Customize Css</span>
-								<span>Responsive</span>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt esse ipsum
-								fugiat dolores fugit explicabo eaque et pariatur perferendis. Expedita quo voluptate
-								voluptatum vero voluptatem odit quisquam libero doloremque?
-							</p>
-							<img src="img/keiei-kanto-gakuin.png" alt="">
-							<a href="http://keiei.kanto-gakuin.ac.jp/" target="_blank" class="to-page">View Website <i
-									class="fa-solid fa-circle-arrow-right"></i></a>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-		</section>
-	</div>
-	<div class="sns">
-		<a href="https://www.linkedin.com/in/mya-thet-chel-039b68234/" target="_blank"><i
-				class="fa-brands fa-linkedin"></i></a>
-		<a href="mailto:myathetchel00@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-		<a href="https://join.skype.com/invite/uqeG1Rms0zDX" target="_blank"><i class="fa-brands fa-skype"></i></a>
-	</div>
+			</section>
+		</div>
+		<div class="sns">
+			<a href="https://www.linkedin.com/in/mya-thet-chel-039b68234/" target="_blank"><i
+					class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:myathetchel00@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://join.skype.com/invite/uqeG1Rms0zDX" target="_blank"><i class="fa-brands fa-skype"></i></a>
+		</div>
+	</div><!--jap-->
+	
 	<footer>Designed and Developed By <em>MyaThetChel</em></footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/javascript.js"></script>

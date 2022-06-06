@@ -1,43 +1,14 @@
-$(".openbtn1").click(function () {//ボタンがクリックされたら
-    $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-    $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+$(".openbtn1").click(function () {
+    $(this).toggleClass('active');
+    $("#g-nav").toggleClass('panelactive');
+    $(".circle-bg").toggleClass('circleactive');
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
-    $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+$("#g-nav a").click(function () {
+    $(".openbtn1").removeClass('active');
+    $("#g-nav").removeClass('panelactive');
+    $(".circle-bg").removeClass('circleactive');
 });
-const sections = document.querySelectorAll("section[id]");
-window.addEventListener("scroll", navHighlighter);
-function navHighlighter() {           
-    let scrollY = window.pageYOffset;
-    sections.forEach(current => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 150;
-    sectionId = current.getAttribute("id");
-    
-    if (
-        scrollY > sectionTop &&
-        scrollY <= sectionTop + sectionHeight
-    ){
-        document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("nav-active");
-        document.querySelector("#about").classList.add("blue");
-    } else {
-        document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("nav-active");
-    }
-    });
-}
-
-// window.addEventListener('scroll',(e)=>{
-//     const navbar = document.getElementById("navbar");
-//     if(window.pageYOffset>750){
-//     navbar.classList.add("add-shadow");
-//     }else{
-//     navbar.classList.remove("add-shadow");
-//     }
-// });
 
 function reveal() {
 var reveals = document.querySelectorAll(".reveal");
