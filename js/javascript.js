@@ -9,6 +9,26 @@ $("#g-nav a").click(function () {
     $("#g-nav").removeClass('panelactive');
     $(".circle-bg").removeClass('circleactive');
 });
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+function navHighlighter() {           
+    let scrollY = window.pageYOffset;
+    sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 150;
+    sectionId = current.getAttribute("id");
+    
+    if (
+        scrollY > sectionTop &&
+        scrollY <= sectionTop + sectionHeight
+    ){
+        document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("nav-active");
+        document.querySelector("#about").classList.add("blue");
+    } else {
+        document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("nav-active");
+    }
+    });
+}
 
 function reveal() {
 var reveals = document.querySelectorAll(".reveal");
