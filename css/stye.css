@@ -840,7 +840,7 @@ a.to-page {
 }
 
 @media screen and (max-width: 600px) {
-  .works-items .row {
+  .works-items .row, .works-items.current .row  {
     grid-template-columns: 1fr;
   }
 }
