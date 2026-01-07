@@ -208,7 +208,7 @@ section:nth-of-type(2n) {
 }
 
 .about-row img {
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 1rem auto;
   border-radius: 50px;
@@ -805,7 +805,13 @@ img.vector-icon {
   font-size: 18px;
   margin-bottom: 1rem;
 }
-
+ul.web-list {
+    margin-top: 8px;
+}
+.web-list-title {
+    margin-bottom: 0;
+    font-weight: 600;
+}
 .tools {
   margin-bottom: 1rem;
 }
