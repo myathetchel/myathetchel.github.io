@@ -191,10 +191,14 @@ button { color: inherit; font: inherit; }
 .project-card:hover { box-shadow: var(--shadow); transform: translateY(-.4rem); }
 .project-featured { display: grid; grid-template-columns: 1.15fr .85fr; }
 .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.project-grid .project-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1.15fr .85fr; }
 .project-media { position: relative; display: grid; place-items: center; min-height: 22rem; padding: clamp(1.2rem, 3vw, 2.5rem); overflow: hidden; background: var(--sage); }
-.project-grid .project-card:first-child .project-media { background: var(--lilac); }
-.project-grid .project-card:last-child .project-media { background: var(--butter); }
+.project-media.datastore-cover { background: #deddea; }
+.project-media.robot-cover { background: #d8e6df; }
 .project-media img { width: 100%; max-height: 35rem; object-fit: contain; border-radius: .8rem; box-shadow: 0 1rem 3rem rgba(39, 66, 56, .16); transform: translateY(var(--parallax-y, 0px)); transition: transform .15s linear; }
+.project-media-real img { height: 17rem; max-height: none; object-fit: none; border: 1px solid rgba(39, 66, 56, .25); }
+.datastore-cover img { object-position: 18% 0; }
+.robot-cover img { object-position: 7% 3%; }
 .project-number { position: absolute; top: 1rem; right: 1rem; display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border: 1px solid var(--espresso); border-radius: 50%; background: var(--paper); color: var(--caramel); font-size: .7rem; font-weight: 850; }
 .project-copy { padding: clamp(1.4rem, 3vw, 2.5rem); }
 .project-kicker { margin: 0 0 1rem; color: var(--caramel); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
@@ -513,6 +517,8 @@ button { color: inherit; font: inherit; }
 .case-meta strong { display: block; margin-bottom: .25rem; color: var(--ink); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
 .case-image { overflow: hidden; margin: 2.2rem 0; border: 1px solid var(--line); border-radius: 1rem; background: var(--sage-soft); }
 .case-image img { width: 100%; }
+.case-image figcaption { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; padding: .8rem 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+.case-image figcaption a { color: var(--caramel); font-weight: 750; text-decoration: underline; text-underline-offset: .2em; }
 .case-image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2.2rem 0; }
 .case-image-grid .case-image { margin: 0; }
 .case-narrative { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding-block: 1rem 2rem; }
@@ -544,7 +550,7 @@ button { color: inherit; font: inherit; }
   .character-scene { min-height: 38rem; width: min(100%, 40rem); justify-self: center; }
   .section-intro, .role-panel { grid-template-columns: 1fr; }
   .role-panel > div:first-child { border-right: 0; border-bottom: 1px solid var(--espresso); }
-  .project-featured { grid-template-columns: 1fr; }
+  .project-featured, .project-grid .project-wide { grid-template-columns: 1fr; }
   .capability-grid { grid-template-columns: repeat(2, 1fr); }
   .journey-grid { grid-template-columns: 1fr; }
   .journey-intro { position: static; }
@@ -572,7 +578,9 @@ button { color: inherit; font: inherit; }
   .role-panel { min-height: 0; }
   .role-panel h3 { font-size: 2.35rem; }
   .project-grid, .capability-grid { grid-template-columns: 1fr; }
+  .project-grid .project-wide { grid-column: auto; }
   .project-media { min-height: 16rem; }
+  .project-media-real img { height: 15rem; }
   .project-copy { padding: 1.3rem; }
   .capability { min-height: 14rem; }
   .toolbelt { grid-template-columns: 1fr; gap: 1rem; }

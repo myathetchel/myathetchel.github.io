@@ -1,59 +1,6 @@
-const roleProfiles = {
-  product: {
-    title: "UI/UX Designer · Product Designer · UI Designer",
-    summary: "I translate stakeholder requirements and complex operational needs into clear flows, wireframes, interfaces, and reusable patterns.",
-    proof: [
-      "B2B and internal product interface design",
-      "Information hierarchy, wireframes, and responsive UI",
-      "Design review and developer handoff in Figma"
-    ],
-    skills: ["Figma", "UI design", "Wireframes", "Prototyping"]
-  },
-  systems: {
-    title: "Design Systems Designer · Design Engineer",
-    summary: "I connect visual decisions with coded components so designers and engineers can work from the same reusable patterns.",
-    proof: [
-      "Reusable Figma component libraries and variants",
-      "Vuetify research, customization, and component styling",
-      "Storybook documentation and front-end implementation"
-    ],
-    skills: ["Figma", "Storybook", "Vuetify", "Vue", "TypeScript", "SCSS"]
-  },
-  web: {
-    title: "Web Designer · Digital Designer",
-    summary: "I design responsive pages with a clear visual hierarchy and stay involved through implementation, publishing, and ongoing updates.",
-    proof: [
-      "Corporate websites, product pages, and landing pages",
-      "Responsive layouts for desktop and mobile",
-      "CMS publishing, testing, maintenance, and releases"
-    ],
-    skills: ["Figma", "Adobe XD", "Photoshop", "HubSpot", "WordPress"]
-  },
-  frontend: {
-    title: "UI Developer · Front-End Designer · Web Markup Engineer",
-    summary: "I turn designs into responsive, maintainable interfaces and collaborate closely with engineers to protect design quality through delivery.",
-    proof: [
-      "Professional HTML, CSS/SCSS, and JavaScript production",
-      "Vue, Vuetify, and TypeScript component work",
-      "Git-based collaboration, testing, fixes, and releases"
-    ],
-    skills: ["HTML", "CSS / SCSS", "JavaScript", "TypeScript", "Vue", "Git"]
-  },
-  bilingual: {
-    title: "Bilingual Web Specialist · Digital Coordinator · Japan-facing Roles",
-    summary: "I combine hands-on digital skills with seven years of Japanese workplace experience, helping teams move clearly across languages and disciplines.",
-    proof: [
-      "Fluent Japanese and a B.A. in Japanese",
-      "Professional collaboration with Japanese planners, designers, and engineers",
-      "Experience across Japanese product, web, and production teams"
-    ],
-    skills: ["Japanese", "English", "Burmese", "Cross-functional collaboration", "Digital production"]
-  }
-};
-
 const projects = {
   "design-system": {
-    kicker: "Case study 01 · Design system",
+    kicker: "Case study 03 · Design system",
     title: "A shared UI language, from Figma to Storybook",
     summary: "At SENSYN ROBOTICS, I worked across design and implementation to help product teams create and reuse more consistent interface patterns.",
     meta: [["Role", "Design Engineer"], ["Team", "Designers + engineers"], ["Tools", "Figma, Storybook, Vue, Vuetify, TypeScript, SCSS"]],
@@ -65,20 +12,36 @@ const projects = {
     ],
     links: [["SENSYN Design system", "https://sensyn-robotics.github.io/sensyn-design-system-vue-3/?path=/docs/vuetify-alert--docs"]]
   },
-  "product-ui": {
-    kicker: "Case study 02 · Product UI",
-    title: "Clear structure for complex operational work",
-    summary: "For B2B products and internal initiatives, I translated planning requirements into organized flows, UI screens, and reusable components.",
-    meta: [["Role", "UI / Product Designer"], ["Scope", "B2B products + internal tools"], ["Tools", "Figma, wireframes, component libraries"]],
-    images: [["assets/pd-pj.png", "Figma workspace showing information-dense product screens, workflow planning, wireframes, and UI states"]],
+  datastore: {
+    kicker: "Case study 01 · Datastore",
+    title: "From drone inspection media to maintenance action",
+    summary: "At SENSYN ROBOTICS, I designed flows for a product that stores drone inspection photos and videos, helping teams review sites and record what needs repair or maintenance.",
+    meta: [["Role", "Product UI / UX design"], ["Context", "Drone-based infrastructure and facility inspection"], ["Tools", "Figma, scenarios, user flows"]],
+    images: [
+      ["assets/datastore-data-list.png", "Datastore data list with an equipment tree, uploaded files, filters, and inspection status", "Datastore data list · product interface"],
+      ["assets/datastore-workflow.png", "Figma design board for workflow selection, copy, and error states in Datastore", "Workflow settings · Figma design states"]
+    ],
+    imageLayout: "stack",
     story: [
-      ["Challenge", "Organize dense operational information and align stakeholder requirements before development began."],
-      ["My contribution", "Listened to planning requirements, shaped content hierarchy and flows, produced wireframes and visual UI in Figma, reused components, reviewed work with the design team, and explained key decisions to developers."],
-      ["Value", "A clearer handoff package that brought flows, component reuse, and screen states into one visual source for design and engineering conversations."]
+      ["Challenge", "Connect a large set of inspection photos and videos with the decisions people need to make about locations requiring attention."],
+      ["My contribution", "Worked through requirements and usage scenarios, mapped user flows, designed the interface in Figma, and reviewed the work with the design team. I discussed scope and deadlines with stakeholders and engineers, then checked the UI and UX in staging."],
+      ["What the design supports", "Users can review inspection media, mark photos with notes about repair or maintenance needs, and add inspection workflows. The case shows my involvement from defining the flow through release review."]
+    ]
+  },
+  "robot-platform": {
+    kicker: "Case study 02 · Robot Platform",
+    title: "A focused control view for hotel robot operations",
+    summary: "For a hotel operations platform at SENSYN ROBOTICS, I helped make robot location, status, and cleaning commands understandable to staff.",
+    meta: [["Role", "Product UI / UX design"], ["Context", "Hotel cleaning and navigation robots"], ["Constraint", "Short timeline and limited budget"]],
+    images: [["assets/robot-platform-prototype.png", "Figma prototype sequence showing robot floor locations, status, and command selection", "Robot Platform · Figma prototype flow"]],
+    story: [
+      ["Challenge", "Give staff a clear view of which floor each robot is on and whether it is running, on standby, in error, or low on battery, while keeping command tasks easy to use."],
+      ["My contribution", "Simplified the design around the essential information and actions. I coordinated priorities, sprints, and releases with engineers so the team could deliver within the available time and budget."],
+      ["Response", "Staff could direct a robot to a floor and cleaning area from the platform. The client said the delivered result exceeded expectations."]
     ]
   },
   "web-experience": {
-    kicker: "Case study 03 · Web design and delivery",
+    kicker: "Case study 04 · Web design and delivery",
     title: "From page design to responsive launch",
     summary: "I owned website work across design, coding, publishing, and ongoing operations for SENSYN ROBOTICS’ corporate and product experiences.",
     meta: [["Role", "Web designer + front-end developer"], ["Scope", "Corporate site, product pages, landing pages"], ["Tools", "Figma, HTML/CSS, JavaScript, HubSpot"]],
@@ -95,51 +58,16 @@ const projects = {
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 
-const rolePanel = document.querySelector(".role-panel");
-const roleTitle = document.querySelector("#role-title");
-const roleSummary = document.querySelector("#role-summary");
-const roleProof = document.querySelector("#role-proof");
-const roleSkills = document.querySelector("#role-skills");
-const roleTabs = [...document.querySelectorAll("[data-role]")];
-
-function selectRole(button) {
-  const profile = roleProfiles[button.dataset.role];
-  if (!profile) return;
-
-  roleTabs.forEach((tab) => {
-    const selected = tab === button;
-    tab.classList.toggle("active", selected);
-    tab.setAttribute("aria-pressed", String(selected));
-  });
-  roleTitle.textContent = profile.title;
-  roleSummary.textContent = profile.summary;
-  roleProof.innerHTML = profile.proof.map((item) => `<li>${item}</li>`).join("");
-  roleSkills.innerHTML = profile.skills.map((item) => `<span>${item}</span>`).join("");
-  rolePanel.classList.remove("updating");
-  requestAnimationFrame(() => rolePanel.classList.add("updating"));
-}
-
-roleTabs.forEach((button, index) => {
-  button.addEventListener("click", () => selectRole(button));
-  button.addEventListener("keydown", (event) => {
-    if (!["ArrowRight", "ArrowLeft"].includes(event.key)) return;
-    event.preventDefault();
-    const direction = event.key === "ArrowRight" ? 1 : -1;
-    const next = roleTabs[(index + direction + roleTabs.length) % roleTabs.length];
-    next.focus();
-    selectRole(next);
-  });
-});
-
 const dialog = document.querySelector("#case-dialog");
 const dialogContent = document.querySelector("#dialog-content");
 const closeButton = document.querySelector(".dialog-close");
 let lastTrigger = null;
 
 function renderProject(project) {
-  const imageMarkup = project.images.length > 1
-    ? `<div class="case-image-grid">${project.images.map(([src, alt]) => `<div class="case-image"><img src="${src}" alt="${alt}"></div>`).join("")}</div>`
-    : `<div class="case-image"><img src="${project.images[0][0]}" alt="${project.images[0][1]}"></div>`;
+  const renderImage = ([src, alt, caption]) => `<figure class="case-image"><img src="${src}" alt="${alt}">${caption ? `<figcaption><span>${caption}</span><a href="${src}" target="_blank" rel="noopener noreferrer">View full size ↗</a></figcaption>` : ""}</figure>`;
+  const imageMarkup = project.images.length > 1 && project.imageLayout !== "stack"
+    ? `<div class="case-image-grid">${project.images.map(renderImage).join("")}</div>`
+    : project.images.map(renderImage).join("");
   const linksMarkup = project.links
     ? `<div class="case-links" aria-label="Live project links">${project.links.map(([label, url]) => `<a href="${url}" target="_blank" rel="noreferrer">${label} ↗</a>`).join("")}</div>`
     : "";
